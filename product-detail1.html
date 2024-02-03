@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+      <meta content="text/html" charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title> Product Dtails</title>
+       <link rel="stylesheet" href="Style.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ </head>
+ <body>
+   <div class="container">
+       <div class="navbar">
+          <div class="navbarlogo">
+            <img src="Ecommerce Images/brand3.png" title="Company Logo">
+          </div>
+           <nav>
+             <ul id="menuItems">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="Products.html">Products</a></li>
+                 <li><a href="Account.html">Account</a></li>
+                 <li><a href="checkout.html">Payment</a></li>
+             </ul>
+           </nav>
+
+            <img src="Ecommerce Images/menuIcon.png" alt="menu icon" class="menu-icon" onclick="menutoggle()">
+         <a href="cart.html"><img src="Ecommerce Images/shopping-cart.webp" class="cart" alt="cart.html"></a>       
+       </div>
+   </div>
+<!--single product details-->
+       <div class="small-containers single-product">
+                 <div class="row">
+                         <div class="col-2">
+                               <a href="product-detail.html"><img src="Ecommerce Images/Axum Dress.png" title="Company picture" width="100%" id="productImg1"></a>
+                               <div class="small-img1-row">
+                                       <div class="small-img1-col">
+                                        <img src="Ecommerce Images/Axum Dress2.png" width="100%" class="small-img1">
+                                       </div>
+                                       <div class="small-img1-col">
+                                        <img src="Ecommerce Images/Axum Dress3.png" width="100%" class="small-img1">
+                                       </div>
+                                       <div class="small-img1-col">
+                                        <img src="Ecommerce Images/Axum Dress4.png" width="100%" class="small-img1">
+                                       </div>
+                                       <div class="small-img1-col">
+                                        <img src="Ecommerce Images/Axum Dress5.png" width="100%" class="small-img1">
+                                       </div>
+                               </div>
+                         </div>
+                         <div class="col-2">
+                               <p>Home / Axum-Dresses</p>
+                               <h1>Fetil Tilif by Habesha</h1>
+                               <div class="rating">
+                               <ion-icon name="star"></ion-icon>
+                               <ion-icon name="star"></ion-icon>
+                               <ion-icon name="star"></ion-icon>
+                               <ion-icon name="star"></ion-icon> 
+                               <ion-icon name="star-half"></ion-icon>       
+                         </div>
+                               <h4>$590.00</h4>
+                               <select>
+                                       <option>select Size</option>
+                                       <option>XXL</option>
+                                       <option>XL</option>
+                                       <option>Large</option>
+                                       <option>Medium</option>
+                                       <option>Small</option>
+                               </select>
+                               <input type="number" value="1">
+                               <a href="" class="btn">Add to Cart</a>
+                               <h3>Product Details&#9755;</h3><br>
+                               <p>Give your holydays with the Ethiopian Axum Dress, Habesha Kemis, Traditional Women's Clothes</p>
+                         </div>
+                 </div>
+       </div>
+       <!-------footer------->
+       <footer>
+               <div class="footer">
+                    <div class="container">
+                          <div class="row">
+                               <div class="footer-col-1">
+                                <h3>Download Our App</h3>
+                                <p>Download App for Android and Iso mobile phone</p>
+                                <div class="app-logo">
+                                     <img src="Ecommerce Images/AppleStoreLogo.png" title="apple AppleStoreLogo">
+                                     <img src="Ecommerce Images/googleplayLogo.png" title="googleplayLogo">
+                                </div>
+
+                               </div>
+                               <div class="footer-col-2">
+                                <img src="Ecommerce Images/logo1.png" title="Company picture">
+                                <p>Our sole purpose is to give you the outstanding pleasure and benefits from our shop accessible to the many.</p>
+                               </div>
+                               <div class="footer-col-3">
+                                <h3>Useful Links</h3>
+                                   <ul>
+                                       <li>Coupons</li>
+                                       <li>Blog Post</li>
+                                       <li>Return Policy</li>
+                                       <li>Join Affiliate</li>
+                                   </ul>
+                               </div> 
+                               <div class="footer-col-4">
+                                <h3>Follow Us</h3>
+                                   <ul>
+                                       <li>Facebook</li>
+                                       <li>Instagram</li>
+                                       <li>Youtube</li>
+                                       <li>Telegram</li>
+                                       <li>Twitter</li>
+                                   </ul>
+                               </div>   
+                          </div>
+                          <hr>
+                          <p class="copyright">&copy;Copyright 2024-Ecommerce Website</p>
+                    </div>
+               </div>
+       </footer>
+  <!----------------js for product details  ------------->
+ 
+<script>
+ window.onload = function() {
+  var productImg1 = document.getElementById("productImg1");
+  var smallImg1 = document.getElementsByClassName("small-img1");
+  var productImg2 = document.getElementById("productImg2");
+  var smallImg2 = document.getElementsByClassName("small-img2");
+  smallImg1[0].onclick = function() {
+    productImg1.src = smallImg1[0].src;
+  };
+   smallImg1[1].onclick = function() {
+    productImg1.src = smallImg1[1].src;
+  };
+   smallImg1[2].onclick = function() {
+    productImg1.src = smallImg1[2].src;
+  };
+   smallImg1[3].onclick = function() {
+    productImg1.src = smallImg1[3].src;
+  };
+    smallImg2[0].onclick = function() {
+    productImg2.src = smallImg2[0].src;
+  };
+   smallImg2[1].onclick = function() {
+    productImg2.src = smallImg2[1].src;
+  };
+   smallImg2[2].onclick = function() {
+    productImg2.src = smallImg2[2].src;
+  };
+   smallImg2[3].onclick = function() {
+    productImg2.src = smallImg2[3].src;
+  };
+};
+
+</script>
+
+
+ 
+ </body>
+</html>
